@@ -5,6 +5,8 @@
 
 # User-added
 appsettings.json
+*.db-shm
+*.db-wal
 
 # User-specific files
 *.rsuser
