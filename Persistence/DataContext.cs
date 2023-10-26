@@ -10,5 +10,9 @@ namespace Persistence
         }
 
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Bearing> Bearings { get; set; }
+
+        public DbSet<CustomItem> CustomItems { get; set; }
     }
 }
