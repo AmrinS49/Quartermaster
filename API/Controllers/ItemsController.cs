@@ -20,9 +20,9 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]   //api/items/example
-        public  async Task<ActionResult<Item>> GetItem(Guid id)
+        public  async Task<ActionResult<Item>> GetItem(string sku)
         {
-            return await _context.Items.FindAsync(id);
+            return await _context.Items.FindAsync(sku);
         }
 
     }
