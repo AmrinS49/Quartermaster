@@ -7,7 +7,7 @@
 appsettings.json
 *.db-shm
 *.db-wal
-.idea/
+.idea/*
 
 # User-specific files
 *.rsuser
