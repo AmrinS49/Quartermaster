@@ -1,29 +1,17 @@
-import { useEffect, useState } from 'react';
-import './App.css'
-import axios from 'axios';
+import {MainLayout} from "./components/layout/MainLayout.tsx";
+
+import './bootstrap-custom.css';
+import './App.css';
+import {CategoryList} from "./features/categories/components/CategoryList.tsx";
 
 function App() {
-  const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/items')
-      .then(response => {
-        setItems(response.data);
-      });
-  }, [])
-
-  return (
-    <>
-      <h1>Quartermaster</h1>
-      <ul>
-        {items.map((item: any) => (
-          <li key={item.id}>
-            {item.name}
-          </li>
-        ))}
-      </ul>
-    </>
-  )
+    return (
+        <>
+            <MainLayout></MainLayout>
+            <CategoryList></CategoryList>
+        </>
+    )
 }
 
 export default App
