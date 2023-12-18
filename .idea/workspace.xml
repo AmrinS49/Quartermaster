@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26f5309c-ec6e-418a-acf1-b2313ebc958c" name="Changes" comment="feat: create custom bootstrap stylesheet" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AmrinS49&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f3131c0f-bc37-41b2-9f10-fcc667483cd3" />
+        <option name="url" value="git@github.com:AmrinS49/quartermaster.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ZYDLIz43oFn36aJgsOlz0xS693" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Amrin/Documents/Dev/Quartermaster/client-app/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\Amrin\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Amrin\Documents\Dev\Quartermaster\client-app\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amrin\Documents\Dev\Quartermaster\client-app\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26f5309c-ec6e-418a-acf1-b2313ebc958c" name="Changes" comment="" />
+      <created>1702590062548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702590062548</updated>
+      <workItem from="1702590064225" duration="79000" />
+      <workItem from="1702590155353" duration="6120000" />
+      <workItem from="1702671310626" duration="23359000" />
+      <workItem from="1702780020994" duration="2667000" />
+    </task>
+    <task id="LOCAL-00001" summary="refactor: updated client-app folder structure&#10;&#10;client-app folder structure now conforms to bulletproof-react &#10;architecture">
+      <option name="closed" value="true" />
+      <created>1702592443060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702592443060</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: create navbar and category list">
+      <option name="closed" value="true" />
+      <created>1702780485091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702780485091</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: create custom bootstrap stylesheet">
+      <option name="closed" value="true" />
+      <created>1702780574156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702780574156</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+    <MESSAGE value="refactor: updated client-app folder structure&#10;&#10;client-app folder structure now conforms to bulletproof-react &#10;architecture" />
+    <MESSAGE value="feat: create navbar and category list" />
+    <MESSAGE value="feat: create custom bootstrap stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create custom bootstrap stylesheet" />
+  </component>
+</project>
