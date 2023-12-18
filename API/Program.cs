@@ -11,7 +11,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(opt =>
 {
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+    // TODO : Add safety if any of these are null
+    
+    string host = Environment.GetEnvironmentVariable("DB_HOST");
+    string port = Environment.GetEnvironmentVariable("DB_PORT");
+    string database = Environment.GetEnvironmentVariable("DB_DATABASE");
+    string username = Environment.GetEnvironmentVariable("DB_USERNAME");
+    string password = Environment.GetEnvironmentVariable("DB_PASSWORD");
+    
+    string connectionString = $"Host={host};Port={port};Database={database};Username={username};Password={password}";
+
+    opt.UseNpgsql(connectionString);
 });
 
 builder.Services.AddCors(opt => {

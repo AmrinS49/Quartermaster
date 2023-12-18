@@ -8,5 +8,13 @@
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/API/quartermaster.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="quartermaster@quartermaster.cqkanceqpn38.us-west-1.rds.amazonaws.com" uuid="e9597eb9-bdc6-412a-b44d-39236ec35c9d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://quartermaster.cqkanceqpn38.us-west-1.rds.amazonaws.com:5432/quartermaster</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

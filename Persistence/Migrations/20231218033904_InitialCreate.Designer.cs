@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Persistence;
 
 #nullable disable
@@ -10,41 +11,45 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231026040621_InitialCreate")]
+    [Migration("20231218033904_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
+            modelBuilder
+                .HasAnnotation("ProductVersion", "7.0.13")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("Domain.Item", b =>
                 {
                     b.Property<string>("Sku")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("Link")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("Material")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<int>("Quantity")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
 
                     b.Property<string>("SkuAlias")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("Vendor")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.HasKey("Sku");
 
@@ -58,22 +63,22 @@ namespace Persistence.Migrations
                     b.HasBaseType("Domain.Item");
 
                     b.Property<string>("BoreType")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<bool>("Flange")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("boolean");
 
                     b.Property<double>("InnerDiameter")
-                        .HasColumnType("REAL");
+                        .HasColumnType("double precision");
 
                     b.Property<bool>("Metric")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("boolean");
 
                     b.Property<double>("OuterDiameter")
-                        .HasColumnType("REAL");
+                        .HasColumnType("double precision");
 
                     b.Property<double>("Width")
-                        .HasColumnType("REAL");
+                        .HasColumnType("double precision");
 
                     b.ToTable("Bearings");
                 });
@@ -83,7 +88,7 @@ namespace Persistence.Migrations
                     b.HasBaseType("Domain.Item");
 
                     b.Property<bool>("Custom")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("boolean");
 
                     b.ToTable("CustomItems");
                 });
