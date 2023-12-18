@@ -1,0 +1,36 @@
+.category-title {
+    font-family: 'Lobster', cursive;
+
+    font-size: 5rem;
+}
+
+.category-card {
+    width: 18rem;
+    height: 24rem;
+    margin: 1rem;
+
+    border: none;
+    border-radius: 4rem;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.category-card:hover {
+    filter: brightness(80%);
+}
+
+.category-card-body  {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-content: space-between;
+}
+
+.category-card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
