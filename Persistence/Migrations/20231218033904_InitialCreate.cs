@@ -14,14 +14,14 @@ namespace Persistence.Migrations
                 name: "Items",
                 columns: table => new
                 {
-                    Sku = table.Column<string>(type: "TEXT", nullable: false),
-                    SkuAlias = table.Column<string>(type: "TEXT", nullable: true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    Quantity = table.Column<int>(type: "INTEGER", nullable: false),
-                    Type = table.Column<string>(type: "TEXT", nullable: false),
-                    Vendor = table.Column<string>(type: "TEXT", nullable: true),
-                    Link = table.Column<string>(type: "TEXT", nullable: true),
-                    Material = table.Column<string>(type: "TEXT", nullable: true)
+                    Sku = table.Column<string>(type: "text", nullable: false),
+                    SkuAlias = table.Column<string>(type: "text", nullable: true),
+                    Name = table.Column<string>(type: "text", nullable: true),
+                    Quantity = table.Column<int>(type: "integer", nullable: false),
+                    Type = table.Column<string>(type: "text", nullable: false),
+                    Vendor = table.Column<string>(type: "text", nullable: true),
+                    Link = table.Column<string>(type: "text", nullable: true),
+                    Material = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -32,13 +32,13 @@ namespace Persistence.Migrations
                 name: "Bearings",
                 columns: table => new
                 {
-                    Sku = table.Column<string>(type: "TEXT", nullable: false),
-                    Flange = table.Column<bool>(type: "INTEGER", nullable: false),
-                    Metric = table.Column<bool>(type: "INTEGER", nullable: false),
-                    OuterDiameter = table.Column<double>(type: "REAL", nullable: false),
-                    InnerDiameter = table.Column<double>(type: "REAL", nullable: false),
-                    Width = table.Column<double>(type: "REAL", nullable: false),
-                    BoreType = table.Column<string>(type: "TEXT", nullable: true)
+                    Sku = table.Column<string>(type: "text", nullable: false),
+                    Flange = table.Column<bool>(type: "boolean", nullable: false),
+                    Metric = table.Column<bool>(type: "boolean", nullable: false),
+                    OuterDiameter = table.Column<double>(type: "double precision", nullable: false),
+                    InnerDiameter = table.Column<double>(type: "double precision", nullable: false),
+                    Width = table.Column<double>(type: "double precision", nullable: false),
+                    BoreType = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -55,8 +55,8 @@ namespace Persistence.Migrations
                 name: "CustomItems",
                 columns: table => new
                 {
-                    Sku = table.Column<string>(type: "TEXT", nullable: false),
-                    Custom = table.Column<bool>(type: "INTEGER", nullable: false)
+                    Sku = table.Column<string>(type: "text", nullable: false),
+                    Custom = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
